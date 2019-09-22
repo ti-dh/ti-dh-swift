@@ -51,11 +51,11 @@ Diffie Hellman密钥交换 可以与客户端和服务端，支持iOS和macOS
 
 | 字段 | 含义 |
 | ------------ | ------------ |
-| server_number |服务端用compute\_share\_key()生成的server_number |
+| server_number |服务器给的processed_server_number |
 | client_number |genereate\_client\_number()生成的client_number |
 | p |服务端计算出来的p |
 
-输出：传给服务端的client_number
+输出：客户端公钥 与服务器的compute\_share\_key比较
 
 
 ## Installation
