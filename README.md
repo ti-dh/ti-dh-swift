@@ -1,9 +1,17 @@
 # ti-dh-swift
 Diffie Hellman密钥交换 可以与客户端和服务端，支持iOS和macOS
 ## ti-dh (服务端API)说明：
-
-### genereate_info()函数
+### genereate\_server\_number()函数
 参数：无需任何参数
+
+返回：随机10000-99999的数字字符串
+### genereate_info()函数
+参数：
+
+| 字段 | 含义 |
+| ------------ | ------------ |
+| width | 随机质数长度 |
+| server_number | 随机私钥字符串 |
 
 返回：swift tuple
 
