@@ -20,14 +20,18 @@ let processed_server_key = String(v.3);
 print("p:",p)
 print("g:",g)
 print("server_number:",server_number)
+//返回给客户端的server_number用户计算
 print("processed_server_key:",processed_server_key)
 
 
 let c=ti_dh_lite.genereate_client_number();
 print("client_number:",c)
 let p_c_n=ti_dh_lite.process_client_number(g,c,p);
+//process_client_number传给服务端计算公钥给客户端
 print("process_client_number:",p_c_n)
 let s = ti_dh.compute_share_key(String(p_c_n),server_number,p);
 print("compute_share_key:",s)
-let p_c_k=ti_dh_lite.process_client_key(String(s), c, p);
+//利用服务端给的公钥计算后和加密后的私钥compute_share_key作比较
+let p_c_k=ti_dh_lite.process_client_key(processed_server_key, c, p);
 print("processed_client_key:",p_c_k)
+
