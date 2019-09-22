@@ -86,3 +86,8 @@ Diffie Hellman密钥交换 可以与客户端和服务端，支持iOS和macOS
     ```
     github "ti-dh/ti-dh-swift" ~> 1.0
     ```
+
+## 截图
+[![1](https://github.com/ti-dh/ti-dh-swift/raw/master/images/WX20190923-022711@2x.png)](1)
+[![2](https://github.com/ti-dh/ti-dh-swift/raw/master/images/WX20190923-022649@2x.png)](2)
+
