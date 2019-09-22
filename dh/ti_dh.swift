@@ -17,11 +17,21 @@ public class ti_dh:NSObject{
 
     private var server_number : BigUInt = ""
     
+    public static func genereate_server_number() -> String{
+        let startIndex = 10000;
+        let endIndex = 99999;
+
+        let client_number = Int(arc4random_uniform(UInt32(endIndex-startIndex))) + startIndex;
+        
+        return String(client_number);
+    }
+
     //生成p、g和server_number( 也就是Bob )
-    public static func genereate_info(_ width: Int) -> (BigUInt, BigUInt, BigUInt ,BigUInt){
+    public static func genereate_info(_ width: Int, _ server_number_str: String = ti_dh.genereate_server_number()) -> (BigUInt, BigUInt, BigUInt ,BigUInt){
         let dh = ti_dh();
         // 初始化p g 和 server-number
         dh._genereate_base_info(width);
+        dh.server_number = BigUInt(server_number_str)!;
         // 根据p, g, server得到A
         let processed_server_number = dh._process_server_key();
         // 然后将p 和 g以及server_number和processed_server_number 返回

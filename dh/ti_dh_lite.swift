@@ -11,7 +11,7 @@ import BigInt
 
 public class ti_dh_lite:NSObject{
     
-    //生成客户端数据
+    //生成客户端随机私钥
     public static func genereate_client_number() -> String{
         let startIndex = 10000;
         let endIndex = 99999;
