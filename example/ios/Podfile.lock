@@ -1,0 +1,25 @@
+PODS:
+  - BigInt (4.0.0)
+  - ti_dh (1.0):
+    - ti_dh/All (= 1.0)
+  - ti_dh/All (1.0):
+    - BigInt
+
+DEPENDENCIES:
+  - ti_dh (from `../../ti_dh.podspec`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BigInt
+
+EXTERNAL SOURCES:
+  ti_dh:
+    :path: "../../ti_dh.podspec"
+
+SPEC CHECKSUMS:
+  BigInt: 2aad1a9942dc932ec8b84290d2c564a3d76f97ab
+  ti_dh: 0ffc45f709e669fd0732d2261be3c44deb204990
+
+PODFILE CHECKSUM: 6490ee2601a89900353d19f547a09c6448c5357d
+
+COCOAPODS: 1.7.3

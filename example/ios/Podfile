@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ti-dh-swift' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'ti_dh', :path => '../../ti_dh.podspec'
+  # Pods for ti-dh-swift
+
+end
